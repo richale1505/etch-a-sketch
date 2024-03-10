@@ -31,8 +31,8 @@ body {
 
 #mainContainer {
     border: solid 1px var(--line-color);
-    width: 480px;
-    height: 480px;
+    width: 520px;
+    height: 520px;
 }
 
 #gridContainer {
