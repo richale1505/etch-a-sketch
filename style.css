@@ -4,7 +4,10 @@
 }
 
 :root {
-    --line-color: black;
+    --color-one: #B5C0D0;
+    --color-two: #CCD3CA;
+    --color-three: #F5E8DD;
+    --color-four: #EED3D9;
 }
 
 body {
@@ -12,6 +15,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-one);
 }
 
 #heading {
@@ -27,10 +31,10 @@ body {
 .btn {
     width: 241px;
     height: 50px;
+    background-color: var(--color-three);
 }
 
 #mainContainer {
-    border: solid 1px var(--line-color);
     width: 520px;
     height: 520px;
 }
@@ -43,7 +47,8 @@ body {
 }
 
 .column {
-    border: solid 1px var(--line-color);
+    border: solid 1px var(--color-one);
+    background-color: var(--color-four);
     width: auto;
     flex-grow: 1;
     display: flex;
@@ -51,7 +56,13 @@ body {
 }
 
 .row {
-    border: solid 1px var(--line-color);
+    border: solid 1px var(--color-one);
     width: inherit;
     flex-grow: 1;
 }
+
+/* TO DO
+    1. change fonts.
+    2. resize fonts.
+    3. add hover effects to buttons.
+*/
