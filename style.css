@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --line-color: black;
+    --color-one: #B5C0D0;
+    --color-two: #CCD3CA;
+    --color-three: #F5E8DD;
+    --color-four: #EED3D9;
 }
 
 body {
@@ -12,10 +18,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-one);
 }
 
 #heading {
     text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 #buttons {
@@ -27,10 +37,18 @@ body {
 .btn {
     width: 241px;
     height: 50px;
+    background-color: var(--color-three);
+    font-family: "ubuntu", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: large;
+}
+
+.btn:hover {
+    background-color: #EED3D9;
 }
 
 #mainContainer {
-    border: solid 1px var(--line-color);
     width: 520px;
     height: 520px;
 }
@@ -43,7 +61,8 @@ body {
 }
 
 .column {
-    border: solid 1px var(--line-color);
+    /*border: solid 1px var(--color-one);*/
+    background-color: var(--color-four);
     width: auto;
     flex-grow: 1;
     display: flex;
@@ -51,7 +70,8 @@ body {
 }
 
 .row {
-    border: solid 1px var(--line-color);
+    /*border: solid 1px var(--color-one);*/
     width: inherit;
     flex-grow: 1;
 }
+
