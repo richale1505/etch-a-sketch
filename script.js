@@ -3,6 +3,10 @@ const resizebtn = document.querySelector('#resize');
 const resetbtn = document.querySelector('#reset');
 const defaultGridSize = 16;
 
+function getRandomInt(max) {
+    return parseInt(Math.random() * max);
+}
+
 function startGame(size) {   
     for (let i = 0; i < size; i++) {
         const column = document.createElement('div');
@@ -14,7 +18,12 @@ function startGame(size) {
             column.appendChild(row);
 
             row.addEventListener('mouseenter', (e) => {
-                e.target.style.background = 'blue';
+                let numOne = getRandomInt(255);
+                let numTwo = getRandomInt(255);
+                let numThree = getRandomInt(255);
+                let color = `rgb(${numOne}, ${numTwo}, ${numThree})`;
+
+                e.target.style.background = color;
             })
         }
 
@@ -39,13 +48,3 @@ resizebtn.addEventListener('click', () => {
 resetbtn.addEventListener('click', () => {
     location.reload();
 });
-
-
-/* TO DO add extra features.
-    1. Rather than squares being the same color throughout the grid, 
-    randomize the squares’ RGB values with each interaction.
-
-    2. Additionally, implement a progressive darkening effect where 
-    each interaction adds 10% more black or color to the square. 
-    The objective is to achieve a completely black square only after ten interactions.
-*/
