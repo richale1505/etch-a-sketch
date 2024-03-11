@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +23,9 @@ body {
 
 #heading {
     text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 #buttons {
@@ -32,6 +38,14 @@ body {
     width: 241px;
     height: 50px;
     background-color: var(--color-three);
+    font-family: "ubuntu", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: large;
+}
+
+.btn:hover {
+    background-color: #EED3D9;
 }
 
 #mainContainer {
@@ -47,7 +61,7 @@ body {
 }
 
 .column {
-    border: solid 1px var(--color-one);
+    /*border: solid 1px var(--color-one);*/
     background-color: var(--color-four);
     width: auto;
     flex-grow: 1;
@@ -56,13 +70,8 @@ body {
 }
 
 .row {
-    border: solid 1px var(--color-one);
+    /*border: solid 1px var(--color-one);*/
     width: inherit;
     flex-grow: 1;
 }
 
-/* TO DO
-    1. change fonts.
-    2. resize fonts.
-    3. add hover effects to buttons.
-*/
