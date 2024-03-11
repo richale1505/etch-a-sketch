@@ -41,8 +41,9 @@ startGame(defaultGridSize);
 
 resizebtn.addEventListener('click', () => {
     removeAllChildNodes(gridContainer);
-    const gridSize = parseInt(prompt('Enter grid size: ', '16px'));
-    startGame(gridSize);
+    const gridSize = parseInt(prompt('Enter grid size (min: 2 / max: 100): ', '16px'));
+
+    gridSize > 100 || gridSize < 2 ? alert('invalid number') : startGame(gridSize);
 })
 
 resetbtn.addEventListener('click', () => {
